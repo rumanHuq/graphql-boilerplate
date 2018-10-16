@@ -1,0 +1,42 @@
+{
+  "env": {
+    "commonjs": true,
+    "es6": true,
+    "node": true
+  },
+  "globals": {
+    "it": true,
+    "describe": true
+  },
+  "plugins": ["import", "prettier", "typescript"],
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "parser": "typescript-eslint-parser",
+    "ecmaFeatures": {
+      "classes": true
+    },
+    "sourceType": "module"
+  },
+  "extends": ["airbnb-base", "prettier", "typescript"],
+  "rules": {
+    "import/extensions": ["error", "never", {
+      "packages": "always"
+    }],
+    "space-before-blocks": ["error", {
+      "functions": "always",
+      "keywords": "always",
+      "classes": "never"
+    }],
+    "no-console": "warn",
+    "semi": "error",
+    "quotes": ["error", "double"],
+    "no-unused-vars": "error",
+    "typescript/no-unused-vars": "warn"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": true,
+      "eslint-import-resolver-typescript": true
+    }
+  }
+}
