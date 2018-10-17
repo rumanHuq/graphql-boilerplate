@@ -9,9 +9,9 @@
     "describe": true
   },
   "plugins": ["import", "prettier", "typescript"],
+  "parser": "typescript-eslint-parser",
   "parserOptions": {
     "ecmaVersion": 2018,
-    "parser": "typescript-eslint-parser",
     "ecmaFeatures": {
       "classes": true
     },
